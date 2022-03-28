@@ -8,7 +8,7 @@ import ArticleDetail from './pages/ArticleDetail';
 
 function App() {
   return (
-    <BrowserRouter>
+    <BrowserRouter basename={process.env.BASENAME_URL}>
       <Nav />
       <Routes>
         <Route exact path="/" element={<Products />} />
